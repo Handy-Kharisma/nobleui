@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="application-name" content="Larona">
+  <meta name="description" content="Kemudahan dalam mengurus Payroll dan Accounting dengan sistem yang akurat, dapat diakses dimanapun dan kapanpun dengan layanan Cloud. Coba sekarang dan nikmati kemudahannya.">
+	<meta name="author" content="Larona">
+  <meta name="keywords" content="Accounting, akunting, act, audit, tax, pajak, akuntansi, akuntansi keuangan, Software Accounting, Payroll, account, account manager, payslip, pph21, layanan cloud, cloud, lembur, cuti, absen">
+
+  <link rel="shortcut icon" href="../assets/images/favicon.png" />
+
+	<title>Merdeka</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- End fonts -->
+
+	<!-- core:css -->
+	<link rel="stylesheet" href="../assets/vendors/core/core.css">
+	<!-- endinject -->
+
+	<!-- Plugin css for this page -->
+	<link rel="stylesheet" href="../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+	<!-- End plugin css for this page -->
+
+	<!-- inject:css -->
+	<link rel="stylesheet" href="../assets/fonts/feather-font/css/iconfont.css">
+	<link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css">
+	<!-- endinject -->
+
+  <!-- Layout styles -->  
+	<link rel="stylesheet" href="../assets/css/demo3/style.css">
+  <!-- End layout styles -->
+
+  <script type="text/javascript">
+    window.onload = () => {
+      document.cookie = 'LW_cookie = %@LW_cookie@%';
+      const user = '%LWeb_user%';
+      if (user === 'AB') document.querySelector('.hide').classList.remove('hide');
+    };
+  </script>
+
+</head>
+<body>
+	<div class="main-wrapper">
+
+		<!-- partial:partials/_navbar.html -->
+		<div class="horizontal-menu">
+			<nav class="navbar top-navbar d-lg-none">
+				<div class="container">
+					<div class="navbar-content">
+            <!-- Brand -->
+						<!-- <a href="#" class="navbar-brand">
+							Noble<span>UI</span>
+						</a> -->
+            <!-- Search -->
+						<!-- <form class="search-form">
+							<div class="input-group">
+                <div class="input-group-text">
+                  <i data-feather="search"></i>
+                </div>
+								<input type="text" class="form-control" id="navbarForm" placeholder="Search here...">
+							</div>
+						</form> -->
+						
+            
+            <ul class="navbar-nav">
+              <!-- Language -->
+							<!-- <li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="flag-icon flag-icon-us mt-1" title="us"></i> <span class="ms-1 me-1 d-none d-md-inline-block">English</span>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="languageDropdown">
+									<a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-us" title="us" id="us"></i> <span class="ms-1"> English </span></a>
+									<a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-fr" title="fr" id="fr"></i> <span class="ms-1"> French </span></a>
+									<a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-de" title="de" id="de"></i> <span class="ms-1"> German </span></a>
+									<a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-pt" title="pt" id="pt"></i> <span class="ms-1"> Portuguese </span></a>
+									<a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-es" title="es" id="es"></i> <span class="ms-1"> Spanish </span></a>
+								</div>
+							</li> -->
+              
+              <!-- Apps -->
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="appsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i data-feather="grid"></i>
+                </a>
+                <div class="dropdown-menu p-0" aria-labelledby="appsDropdown">
+                  <div class="px-3 py-2 d-flex align-items-center justify-content-between border-bottom">
+                    <p class="mb-0 fw-bold">Web Apps</p>
+                    <a href="javascript:;" class="text-muted">Edit</a>
+                  </div>
+                  <div class="row g-0 p-1">
+                    <div class="col-3 text-center">
+                      <a href="pages/apps/chat.html" class="dropdown-item d-flex flex-column align-items-center justify-content-center wd-70 ht-70"><i data-feather="message-square" class="icon-lg mb-1"></i><p class="tx-12">Chat</p></a>
+                    </div>
+                    <div class="col-3 text-center">
+                      <a href="pages/apps/calendar.html" class="dropdown-item d-flex flex-column align-items-center justify-content-center wd-70 ht-70"><i data-feather="calendar" class="icon-lg mb-1"></i><p class="tx-12">Calendar</p></a>
+                    </div>
+                    <div class="col-3 text-center">
+                      <a href="pages/email/inbox.html" class="dropdown-item d-flex flex-column align-items-center justify-content-center wd-70 ht-70"><i data-feather="mail" class="icon-lg mb-1"></i><p class="tx-12">Email</p></a>
+                    </div>
+                    <div class="col-3 text-center">
+                      <a href="pages/general/profile.html" class="dropdown-item d-flex flex-column align-items-center justify-content-center wd-70 ht-70"><i data-feather="instagram" class="icon-lg mb-1"></i><p class="tx-12">Profile</p></a>
+                    </div>
+                  </div>
+                  <div class="px-3 py-2 d-flex align-items-center justify-content-center border-top">
+                    <a href="javascript:;">View all</a>
+                  </div>
+                </div>
+              </li> -->
+              
+              <!-- Message -->
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i data-feather="mail"></i>
+                </a>
+                <div class="dropdown-menu p-0" aria-labelledby="messageDropdown">
+                  <div class="px-3 py-2 d-flex align-items-center justify-content-between border-bottom">
+                    <p>9 New Messages</p>
+                    <a href="javascript:;" class="text-muted">Clear all</a>
+                  </div>
+                  <div class="p-1">
+                    <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
+                      <div class="me-3">
+                        <img class="wd-30 ht-30 rounded-circle" src="https://via.placeholder.com/30x30" alt="userr">
+                      </div>
+                      <div class="d-flex justify-content-between flex-grow-1">
+                        <div class="me-4">
+                          <p>Leonardo Payne</p>
+                          <p class="tx-12 text-muted">Project status</p>
+                        </div>
+                        <p class="tx-12 text-muted">2 min ago</p>
+                      </div>	
+                    </a>
+                    <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
+                      <div class="me-3">
+                        <img class="wd-30 ht-30 rounded-circle" src="https://via.placeholder.com/30x30" alt="userr">
+                      </div>
+                      <div class="d-flex justify-content-between flex-grow-1">
+                        <div class="me-4">
+                          <p>Carl Henson</p>
+                          <p class="tx-12 text-muted">Client meeting</p>
+                        </div>
+                        <p class="tx-12 text-muted">30 min ago</p>
+                      </div>	
+                    </a>
+                    <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
+                      <div class="me-3">
+                        <img class="wd-30 ht-30 rounded-circle" src="https://via.placeholder.com/30x30" alt="userr">
+                      </div>
+                      <div class="d-flex justify-content-between flex-grow-1">
+                        <div class="me-4">
+                          <p>Jensen Combs</p>
+                          <p class="tx-12 text-muted">Project updates</p>
+                        </div>
+                        <p class="tx-12 text-muted">1 hrs ago</p>
+                      </div>	
+                    </a>
+                    <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
+                      <div class="me-3">
+                        <img class="wd-30 ht-30 rounded-circle" src="https://via.placeholder.com/30x30" alt="userr">
+                      </div>
+                      <div class="d-flex justify-content-between flex-grow-1">
+                        <div class="me-4">
+                          <p>Amiah Burton</p>
+                          <p class="tx-12 text-muted">Project deatline</p>
+                        </div>
+                        <p class="tx-12 text-muted">2 hrs ago</p>
+                      </div>	
+                    </a>
+                    <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
+                      <div class="me-3">
+                        <img class="wd-30 ht-30 rounded-circle" src="https://via.placeholder.com/30x30" alt="userr">
+                      </div>
+                      <div class="d-flex justify-content-between flex-grow-1">
+                        <div class="me-4">
+                          <p>Yaretzi Mayo</p>
+                          <p class="tx-12 text-muted">New record</p>
+                        </div>
+                        <p class="tx-12 text-muted">5 hrs ago</p>
+                      </div>	
+                    </a>
+                  </div>
+                  <div class="px-3 py-2 d-flex align-items-center justify-content-center border-top">
+                    <a href="javascript:;">View all</a>
+                  </div>
+                </div>
+              </li> -->
+              
+              <!-- Notification -->
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i data-feather="bell"></i>
+                  <div class="indicator">
+                    <div class="circle"></div>
+                  </div>
+                </a>
+                <div class="dropdown-menu p-0" aria-labelledby="notificationDropdown">
+                  <div class="px-3 py-2 d-flex align-items-center justify-content-between border-bottom">
+                    <p>6 New Notifications</p>
+                    <a href="javascript:;" class="text-muted">Clear all</a>
+                  </div>
+                  <div class="p-1">
+                    <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
+                      <div class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3">
+                        <i class="icon-sm text-white" data-feather="gift"></i>
+                      </div>
+                      <div class="flex-grow-1 me-2">
+                        <p>New Order Recieved</p>
+                        <p class="tx-12 text-muted">30 min ago</p>
+                      </div>	
+                    </a>
+                    <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
+                      <div class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3">
+                        <i class="icon-sm text-white" data-feather="alert-circle"></i>
+                      </div>
+                      <div class="flex-grow-1 me-2">
+                        <p>Server Limit Reached!</p>
+                        <p class="tx-12 text-muted">1 hrs ago</p>
+                      </div>	
+                    </a>
+                    <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
+                      <div class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3">
+                        <img class="wd-30 ht-30 rounded-circle" src="https://via.placeholder.com/30x30" alt="userr">
+                      </div>
+                      <div class="flex-grow-1 me-2">
+                        <p>New customer registered</p>
+                        <p class="tx-12 text-muted">2 sec ago</p>
+                      </div>	
+                    </a>
+                    <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
+                      <div class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3">
+                        <i class="icon-sm text-white" data-feather="layers"></i>
+                      </div>
+                      <div class="flex-grow-1 me-2">
+                        <p>Apps are ready for update</p>
+                        <p class="tx-12 text-muted">5 hrs ago</p>
+                      </div>	
+                    </a>
+                    <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
+                      <div class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3">
+                        <i class="icon-sm text-white" data-feather="download"></i>
+                      </div>
+                      <div class="flex-grow-1 me-2">
+                        <p>Download completed</p>
+                        <p class="tx-12 text-muted">6 hrs ago</p>
+                      </div>	
+                    </a>
+                  </div>
+                  <div class="px-3 py-2 d-flex align-items-center justify-content-center border-top">
+                    <a href="javascript:;">View all</a>
+                  </div>
+                </div>
+              </li> -->
+              
+              <!-- Profile -->
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img class="wd-30 ht-30 rounded-circle" src="https://via.placeholder.com/30x30" alt="profile">
+                </a>
+                <div class="dropdown-menu p-0" aria-labelledby="profileDropdown">
+                  <div class="d-flex flex-column align-items-center border-bottom px-5 py-3">
+                    <div class="mb-3">
+                      <img class="wd-80 ht-80 rounded-circle" src="https://via.placeholder.com/80x80" alt="">
+                    </div>
+                    <div class="text-center">
+                      <p class="tx-16 fw-bolder">Amiah Burton</p>
+                      <p class="tx-12 text-muted">amiahburton@gmail.com</p>
+                    </div>
+                  </div>
+                  <ul class="list-unstyled p-1">
+                    <li class="dropdown-item py-2">
+                      <a href="pages/general/profile.html" class="text-body ms-0">
+                        <i class="me-2 icon-md" data-feather="user"></i>
+                        <span>Profile</span>
+                      </a>
+                    </li>
+                    <li class="dropdown-item py-2">
+                      <a href="javascript:;" class="text-body ms-0">
+                        <i class="me-2 icon-md" data-feather="edit"></i>
+                        <span>Edit Profile</span>
+                      </a>
+                    </li>
+                    <li class="dropdown-item py-2">
+                      <a href="javascript:;" class="text-body ms-0">
+                        <i class="me-2 icon-md" data-feather="repeat"></i>
+                        <span>Switch User</span>
+                      </a>
+                    </li>
+                    <li class="dropdown-item py-2">
+                      <a href="javascript:;" class="text-body ms-0">
+                        <i class="me-2 icon-md" data-feather="log-out"></i>
+                        <span>Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li> -->
+						</ul>
+						<button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="horizontal-menu-toggle">
+							<i data-feather="menu"></i>					
+						</button>
+					</div>
+				</div>
+			</nav>
+			<nav class="bottom-navbar">
+				<div class="container">
+					<ul class="nav page-navigation">
+
+            <!-- Unit Sales -->
+						<li class="nav-item">
+							<a href="#" class="nav-link">
+                <i class="link-icon" data-feather="tag"></i>
+								<span class="menu-title">Unit Sales</span>
+								<i class="link-arrow"></i>
+							</a>
+							<div class="submenu">
+								<div class="row">
+
+									<div class="col-md-4" style="width: fit-content; min-width: 260px;">
+                    <ul class="submenu-item">
+											<li class="category-heading">Sales</li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?SU530%rmid%">Sales</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?SU531%rmid%">Sales List</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?SU520%rmid%">Purchase</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?SU510%rmid%">Stock Code Master</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?SU511%rmid%">Stock Unit Master File</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?SU600%rmid%">Display Inventory Movement</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?SU610%rmid%">Display Unit Stock</a></li>
+										</ul>
+									</div>
+                  <div class="col-md-4" style="width: fit-content; min-width: 260px;">
+                    <ul class="submenu-item">
+                      <li class="category-heading">Reports</li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?SU430%rmid%">Sales Down Payment</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?SU431%rmid%">Sales Per Day</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?SU432%rmid%">Sales Delivery Report</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?SU410%rmid%">Unit Movement Report</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?Report%rmid%&LW_key=SC">Stock Unit Report</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?Report%rmid%&LW_key=TG">Penagihan ke Leasing</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?Report%rmid%&LW_key=PRG">Progresif Report</a></li>
+                    </ul>
+                  </div>
+									<div class="col-md-4" style="width: fit-content; min-width: 260px;">
+                    <ul class="submenu-item">
+											<li class="category-heading">History</li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?SUH610%rmid%">Stock History</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?SUH630%rmid%">Unit Sales History</a></li>
+                      <li class="category-heading">Unit Sales</li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?SU450%rmid%">Unit Sales Journal</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?SU300%rmid%">Unit Sales Closing</a></li>
+										</ul>
+									</div>
+
+								</div> <!-- row -->
+							</div> <!-- submenu -->
+						</li> <!-- nav-item -->
+
+            <!-- Service -->
+            <li class="nav-item mega-menu">
+							<a href="#" class="nav-link">
+								<i class="link-icon" data-feather="settings"></i>
+								<span class="menu-title">Service</span>
+								<i class="link-arrow"></i>
+							</a>
+							<div class="submenu p-0">
+								<div class="row">
+
+									<div class="col-md-3">
+										<ul class="submenu-item">
+                      <li class="category-heading">Service</li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC521%rmid%">Services Request</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC520%rmid%">Services Transaction</a></li>
+                      <li class="category-heading">Physical Stock Check</li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC530%rmid%">Physical Stock Check</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC531%rmid%">Stock Check Zero Adjustment</a></li>
+                      <li class="category-heading">Stock</li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC510%rmid%">Stock Code Master File</a></li>
+                 <!-- <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC610%rmid%">Stock Code Extension</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC610B%rmid%">Stock Code Breakdwon</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC610U%rmid%">Stock Code Unit Price</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC590%rmid%">Machine Master File</a></li> -->
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC600%rmid%">Display Inventory Movement</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC611%rmid%">Display Stock</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC621%rmid%">Display Inventory Transaction</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC620%rmid%">Display Detail Inventory Transaction</a></li>
+                      <li class="category-heading">Service Reports</li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC423%sesid%">IC trx. Cashier Report</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?Report%rmid%&LW_key=DS">Daily Summary Report</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?Report%rmid%&LW_key=PH">Laporan Penerimaan Harian</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?Report%rmid%&LW_key=LPJ">Penjualan Jasa Harian</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?Report%rmid%&LW_key=PS">Penjualan Spareparts Harian</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?Report%rmid%&LW_key=LSB">Laporan Service Bengkel</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?Report%rmid%&LW_key=SM">Laporan Service Mekanik</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?Report%rmid%&LW_key=LOS">Laporan Outstanding Service</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?Report%rmid%&LW_key=LHS">Laporan History Service</a></li>
+										</ul>
+									</div>
+                  <div class="col-md-3">
+										<ul class="submenu-item">
+                      <li class="category-heading">Cost Calculation</li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC400%rmid%">Cost Calculation</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC404%rmid%">Ending Balance Adjustment</a>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC490%rmid%">Beginning Cost Warning Report</a>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC491%rmid%">Buying Cost Warning Report</a>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC492%rmid%">Production Cost Warning Report</a>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC494%rmid%">Transfer Cost Warning Report</a>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC495%rmid%">Transaction Cost Warning Report</a>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC496%rmid%">Sales Cost Warning Report</a>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?ICxBegin%rmid%">Beginning Integrity Check</a>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC410%rmid%">Inv. Movement Report</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC411%rmid%">Inv. Movement per Supplier</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC412%rmid%">Inv. Ending by Size</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC414%rmid%">Inv. Ending by Warehouse</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC416%rmid%">Inv. Ending on Request</a></li>
+										</ul>
+									</div>
+                  <div class="col-md-3">
+										<ul class="submenu-item">
+                      <li class="category-heading">IC Reports</li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC420%rmid%">Inv. Transaction per No</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC421%rmid%">Inv. Transaction per Day</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC422%rmid%">Inv. Transaction per TrxType</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC423%rmid%">Inv. Transaction Cashier Report</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC424%rmid%">Inv. Transaction per Cust/Supl</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC426%rmid%">Inv. Transaction per Salesman</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC428%rmid%">Inv. Transaction per Order</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC429%rmid%">Inv. Transaction per Machine</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC433%rmid%">Trx. Per Group</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC434%rmid%">Trx. Per Cust/Supl</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC435%rmid%">Trx. Dept</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC448%rmid%">Trx. Rqst Balance Report</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC480%rmid%">Inventory Movement Request</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC450%rmid%">IC Journal</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC451%rmid%">Sales Journal</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC460%rmid%">IC Summary Reports</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC461%rmid%">IC Summary per Account Reports</a></li>
+										</ul>
+									</div>
+									<div class="col-md-3">
+										<ul class="submenu-item">
+                      <li class="category-heading">Tables</li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_worktp%rmid%">Worktype</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?PR510%rmid%">Employee Master</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC840%rmid%">Operator Ic Code Table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?htm_srvs%rmid%">Service Code Table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?htm_motor%rmid%">Motor Code Table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?htm_utype%rmid%">Unit Type Table</a></li>
+                      <li class="category-heading">IC History</li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC670%rmid%">Display Inv.Trx. Summary</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC671%rmid%">Display Cust/Supl Summary</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC672%rmid%">Inventory Incoming and Sales</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC679%rmid%">Display Machine History</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IP300%rmid%">IP Period Closing</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC300%rmid%">IC Period Closing</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC502%rmid%">IC System Status</a></li>
+										</ul>
+									</div>
+
+								</div> <!-- row -->
+							</div> <!-- submenu -->
+						</li> <!-- nav-item mega-menu -->
+
+            <!-- Cash Bank -->
+						<li class="nav-item">
+							<a href="#" class="nav-link">
+                <i class="link-icon" data-feather="dollar-sign"></i>
+								<span class="menu-title">Cash Bank</span>
+								<i class="link-arrow"></i>
+							</a>
+							<div class="submenu">
+								<div class="row">
+
+									<div class="col-md-6" style="width: fit-content; min-width: 260px;">
+                    <ul class="submenu-item">
+											<li class="category-heading">Cash Bank</li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?cb520R%rmid%">Cash Bank for AR Payment</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?cb520P%rmid%">Cash Bank for AP Payment</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?cb520%rmid%">Cash Bank</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?cb521%rmid%">Cash Bank request</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?cb530%rmid%">Bank Received/Deposit</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?CB540%rmid%">Project's Cash Bank</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?CB541%rmid%">Project's Budget</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?cb550%rmid%">Invoice Expense</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?cb620%rmid%">Display Cash Bank</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?cb621%rmid%">Display Cash Bank Detail</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?cb400%rmid%">Cash Flow Report</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?cb410%rmid%">Post Dated Check Report</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?cb420%rmid%">Cash Bank per no. Report</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?cb424%rmid%">Cash Bank per Collector Report</a></li>
+										</ul>
+									</div>
+                  <div class="col-md-6" style="width: fit-content; min-width: 260px;">
+                    <ul class="submenu-item">
+                      <li class="category-heading">Cash Bank History</li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?CBH620%rmid%">Display Cash Bank History</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?CBH621%rmid%">Display Cash Bank Item History</a></li>
+                    </ul>
+                  </div>
+
+								</div> <!-- row -->
+							</div> <!-- submenu -->
+						</li> <!-- nav-item -->
+
+            <!-- Dashboard -->
+						<!-- <li class="nav-item">
+							<a class="nav-link" href="dashboard.html">
+								<i class="link-icon" data-feather="box"></i>
+								<span class="menu-title">Dashboard</span>
+							</a>
+						</li> -->
+						
+            <!-- Apps -->
+            <!-- <li class="nav-item">
+							<a href="#" class="nav-link">
+								<i class="link-icon" data-feather="mail"></i>
+								<span class="menu-title">Apps</span>
+								<i class="link-arrow"></i>
+							</a>
+							<div class="submenu">
+								<ul class="submenu-item">
+									<li class="category-heading">Email</li>
+									<li class="nav-item"><a class="nav-link" href="pages/email/inbox.html">Inbox</a></li>
+									<li class="nav-item"><a class="nav-link" href="pages/email/read.html">Read</a></li>
+									<li class="nav-item"><a class="nav-link" href="pages/email/compose.html">Compose</a></li>
+									<li class="category-heading">Other<li>
+									<li class="nav-item"><a class="nav-link" href="pages/apps/chat.html">Chat</a></li>
+									<li class="nav-item"><a class="nav-link" href="pages/apps/calendar.html">Calendar</a></li>
+								</ul>
+							</div>
+						</li> -->
+
+            <!-- UI Kit -->
+						<!-- <li class="nav-item mega-menu">
+							<a href="#" class="nav-link">
+								<i class="link-icon" data-feather="feather"></i>
+								<span class="menu-title">UI Kit</span>
+								<i class="link-arrow"></i>
+							</a>
+							<div class="submenu">
+								<div class="col-group-wrapper row">
+									<div class="col-group col-md-9">
+										<div class="row">
+											<div class="col-12">
+												<p class="category-heading">Basic</p>
+												<div class="submenu-item">
+													<div class="row">
+														<div class="col-md-4">
+															<ul>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/accordion.html">Accordion</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/alerts.html">Alerts</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/badges.html">Badges</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/breadcrumbs.html">Breadcrumbs</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/buttons.html">Buttons</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/button-group.html">Buttn Group</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/cards.html">Cards</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/carousel.html">Carousel</a></li>
+															</ul>
+														</div>
+														<div class="col-md-4">
+															<ul>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/collapse.html">Collapse</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/dropdowns.html">Dropdowns</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/list-group.html">List group</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/media-object.html">Media object</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/modal.html">Modal</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/navs.html">Navs</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/navbar.html">Navbar</a></li>
+															</ul>
+														</div>
+														<div class="col-md-4">
+															<ul>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/pagination.html">Pagination</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/popover.html">Popovers</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/progress.html">Progress</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/scrollbar.html">Scrollbar</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/scrollspy.html">Scrollspy</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/spinners.html">Spinners</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/tabs.html">Tabs</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/ui-components/tooltips.html">Tooltips</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-group col-md-3">
+										<div class="row">
+											<div class="col-12">
+												<p class="category-heading">Advanced</p>
+												<div class="submenu-item">
+													<div class="row">
+														<div class="col-md-12">
+															<ul>
+																<li class="nav-item"><a class="nav-link" href="pages/advanced-ui/cropper.html">Cropper</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/advanced-ui/owl-carousel.html">Owl carousel</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/advanced-ui/sortablejs.html">SortableJs</a></li>
+																<li class="nav-item"><a class="nav-link" href="pages/advanced-ui/sweet-alert.html">Sweetalert</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li> -->
+
+						<!-- <li class="nav-item">
+							<a href="#" class="nav-link">
+								<i class="link-icon" data-feather="inbox"></i>
+								<span class="menu-title">Forms</span>
+								<i class="link-arrow"></i>
+							</a>
+							<div class="submenu">
+								<ul class="submenu-item">
+									<li class="nav-item"><a class="nav-link" href="pages/forms/basic-elements.html">Basic Elements</a></li>
+									<li class="nav-item"><a class="nav-link" href="pages/forms/advanced-elements.html">Advanced Elements</a></li>
+									<li class="nav-item"><a class="nav-link" href="pages/forms/editors.html">Editors</a></li>
+									<li class="nav-item"><a class="nav-link" href="pages/forms/wizard.html">Wizard</a></li>
+								</ul>
+							</div>
+						</li> -->
+            
+            <!-- Data -->
+						<li class="nav-item">
+							<a href="#" class="nav-link">
+								<i class="link-icon" data-feather="pie-chart"></i>
+								<span class="menu-title">Data</span>
+								<i class="link-arrow"></i>
+							</a>
+							<div class="submenu">
+								<div class="row">
+									<div class="col-md-6">
+										<ul class="submenu-item pe-md-0">
+											<li class="category-heading">Charts</li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/apex.html">Apex</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/flot.html">Float</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/morrisjs.html">Morris</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/peity.html">Peity</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/sparkline.html">Sparkline</a></li>
+										</ul>
+									</div>
+									<div class="col-md-6">
+										<ul class="submenu-item ps-md-0">
+											<li class="category-heading">Tables</li>
+											<li class="nav-item"><a class="nav-link" href="pages/tables/basic-table.html">Basic Tables</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/tables/data-table.html">Data Table</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+
+            <!-- Master Tables -->
+						<li class="nav-item">
+							<a href="#" class="nav-link">
+								<i class="link-icon" data-feather="pie-chart"></i>
+								<span class="menu-title">Master Tables</span>
+								<i class="link-arrow"></i>
+							</a>
+							<div class="submenu" style="left: auto; right: 0;">
+								<div class="row">
+									<div class="col-md-6">
+                    <ul class="submenu-item ps-md-3 pe-md-0 py-md-3">
+											<!-- <li class="category-heading">Charts</li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/apex.html">Apex</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/flot.html">Float</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/morrisjs.html">Morris</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/peity.html">Peity</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/sparkline.html">Sparkline</a></li> -->
+
+                      <li class="category-heading">Master Tables</li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?GL510%rmid%">Chart of Accounts</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?GL511%rmid%">Resp.Center Accounts</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?GL820%rmid%">Location /Branch Table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?IC820%rmid%">Warehouse Table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?AP510%rmid%">Supplier Code Tables</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?AR510%rmid%">Cust Code Tables</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?AR810%rmid%">Cust Group Code Tables</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?CR810%rmid%">Credit Card List</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?AR830%rmid%">Salesman Code Table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?HTM_COLOR%rmid%">Color Code Table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?HTM_MEDIATOR%rmid%">Mediator Code Table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?HTM_BIRO%rmid%">Biro Jasa Table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?HTM_BIROJASA%rmid%">Biro Jasa Table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?HTM_KEL%rmid%">Kelurahan Code Table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?AR833%rmid%">Operator Code Table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?GL822%rmid%">Responsibility Centre</a></li>
+                 <!-- <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_Curncy%rmid%">Currency table</a></li> -->
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_report%rmid%">User Report Layout</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_Trxtp%rmid%">Transaction Type table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_jntp%rmid%">Journal Type table</a></li>
+                 <!-- <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_opcode%rmid%">Operation Code table</a></li> -->
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_Docno%rmid%">Document Id. table</a></li>
+
+
+										</ul>
+									</div>
+									<div class="col-md-6">
+                    <ul class="submenu-item ps-md-0 pe-md-3 py-md-3">
+											<li class="category-heading">Tables</li>
+											<li class="nav-item"><a class="nav-link" href="pages/tables/basic-table.html">Basic Tables</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/tables/data-table.html">Data Table</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+
+            <!-- Support -->
+						<li class="nav-item">
+							<a href="#" class="nav-link">
+								<i class="link-icon" data-feather="pie-chart"></i>
+								<span class="menu-title">Support</span>
+								<i class="link-arrow"></i>
+							</a>
+							<div class="submenu" style="left: auto; right: 0;">
+								<div class="row">
+									<div class="col-md-6" style="width: fit-content;">
+                    <ul class="submenu-item">
+											<!-- <li class="category-heading">Charts</li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/apex.html">Apex</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/flot.html">Float</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/morrisjs.html">Morris</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/peity.html">Peity</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/charts/sparkline.html">Sparkline</a></li> -->
+
+                      <li class="category-heading">Support</li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?ACIndex%rmid%">AC Reindex</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?SUIndex%rmid%">SU Reindex</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?GL340%rmid%">Delete not Active Account</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_approval%rmid%">Approval</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_approved%rmid%">Approved</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?GL920%rmid%">Copy Last Year Ending Balance</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?GL930%rmid%">Copy GL per Ref. Balance</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_print%rmid%">Program Printer's Setup</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_font%rmid%">Font Code Table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_color%rmid%">Color Code Table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_locker%rmid%">Trx. Locker</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_user%rmid%">User detail table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_userH%rmid%">User table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_userG%rmid%">User Group table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_company%rmid%">Company's System Control</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_peri%rmid%">Accounting Period Table</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_process%rmid%">Processing Log</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?tb_processH%rmid%">Processing History</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?LnClean%rmid%">Directory Cleanup</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?print_list%rmid%">Print list</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?LnLxe%rmid%">Larona Layout</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?lnstru%rmid%">LnStru</a></li>
+                      <li class="nav-item"><a class="nav-link" target="bidang" href="lnweb?Lpx_List%rmid%">lpx list</a></li>
+										</ul>
+									</div>
+									<div class="col-md-6" style="width: fit-content;">
+                    <ul class="submenu-item">
+											<li class="category-heading">Tables</li>
+											<li class="nav-item"><a class="nav-link" href="pages/tables/basic-table.html">Basic Tables</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/tables/data-table.html">Data Table</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+
+            <!-- Icons -->
+						<!-- <li class="nav-item">
+							<a href="#" class="nav-link">
+								<i class="link-icon" data-feather="smile"></i>
+								<span class="menu-title">Icons</span>
+								<i class="link-arrow"></i>
+							</a>
+							<div class="submenu">
+								<ul class="submenu-item">
+									<li class="nav-item"><a class="nav-link" href="pages/icons/feather-icons.html">Feather Icons</a></li>
+									<li class="nav-item"><a class="nav-link" href="pages/icons/flag-icons.html">Flag Icons</a></li>
+									<li class="nav-item"><a class="nav-link" href="pages/icons/mdi-icons.html">Mdi Icons</a></li>
+								</ul>
+							</div>
+						</li> -->
+
+            <!-- Sample Pages -->
+						<!-- <li class="nav-item mega-menu">
+							<a href="#" class="nav-link">
+								<i class="link-icon" data-feather="book"></i>
+								<span class="menu-title">Sample Pages</span>
+								<i class="link-arrow"></i>
+							</a>
+							<div class="submenu">
+								<div class="col-group-wrapper row">
+									<div class="col-group col-md-6">
+										<p class="category-heading">Special Pages</p>
+										<div class="submenu-item">
+											<div class="row">
+												<div class="col-md-6">
+													<ul>
+														<li class="nav-item"><a class="nav-link" href="pages/general/blank-page.html">Blank page</a></li>
+														<li class="nav-item"><a class="nav-link" href="pages/general/faq.html">Faq</a></li>
+														<li class="nav-item"><a class="nav-link" href="pages/general/invoice.html">Invoice</a></li>
+													</ul>
+												</div>
+												<div class="col-md-6">
+													<ul>
+														<li class="nav-item"><a class="nav-link" href="pages/general/profile.html">Profile</a></li>
+														<li class="nav-item"><a class="nav-link" href="pages/general/pricing.html">Pricing</a></li>
+														<li class="nav-item"><a class="nav-link" href="pages/general/timeline.html">Timeline</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-group col-md-3">
+										<p class="category-heading">Auth Pages</p>
+										<ul class="submenu-item">
+											<li class="nav-item"><a class="nav-link" href="pages/auth/login.html">Login</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/auth/register.html">Register</a></li>
+										</ul>
+									</div>
+									<div class="col-group col-md-3">
+										<p class="category-heading">Error Pages</p>
+										<ul class="submenu-item">
+											<li class="nav-item"><a class="nav-link" href="pages/error/404.html">404</a></li>
+											<li class="nav-item"><a class="nav-link" href="pages/error/500.html">500</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li> -->
+
+            <!-- Documentation -->
+						<!-- <li class="nav-item">
+							<a href="https://www.nobleui.com/html/documentation/docs.html" target="_blank" class="nav-link">
+								<i class="link-icon" data-feather="hash"></i>
+								<span class="menu-title">Documentation</span></a>
+						</li> -->
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- partial -->
+	
+		<div class="page-wrapper">
+      <iframe name=bidang id="mainIframe" overflow=no frameborder=no allowfullscreen="yes" style="height: 100vh;width: -webkit-fill-available;"></iframe>
+			<!-- <div class="page-content"> -->
+        <!-- <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
+          <div>
+            <h4 class="mb-3 mb-md-0">Welcome to Dashboard</h4>
+          </div>
+          <div class="d-flex align-items-center flex-wrap text-nowrap">
+            <div class="input-group date datepicker wd-200 me-2 mb-2 mb-md-0" id="dashboardDate">
+              <span class="input-group-text input-group-addon bg-transparent border-primary"><i data-feather="calendar" class=" text-primary"></i></span>
+              <input type="text" class="form-control border-primary bg-transparent">
+            </div>
+            <button type="button" class="btn btn-outline-primary btn-icon-text me-2 mb-2 mb-md-0">
+              <i class="btn-icon-prepend" data-feather="printer"></i>
+              Print
+            </button>
+            <button type="button" class="btn btn-primary btn-icon-text mb-2 mb-md-0">
+              <i class="btn-icon-prepend" data-feather="download-cloud"></i>
+              Download Report
+            </button>
+          </div>
+        </div> -->
+
+        <!-- <div class="row">
+          <div class="col-12 col-xl-12 stretch-card">
+            <div class="row flex-grow-1">
+              <div class="col-md-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-baseline">
+                      <h6 class="card-title mb-0">New Customers</h6>
+                      <div class="dropdown mb-2">
+                        <button class="btn p-0" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a>
+                          <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a>
+                          <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a>
+                          <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a>
+                          <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 col-md-12 col-xl-5">
+                        <h3 class="mb-2">3,897</h3>
+                        <div class="d-flex align-items-baseline">
+                          <p class="text-success">
+                            <span>+3.3%</span>
+                            <i data-feather="arrow-up" class="icon-sm mb-1"></i>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12 col-xl-7">
+                        <div id="customersChart" class="mt-md-3 mt-xl-0"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-baseline">
+                      <h6 class="card-title mb-0">New Orders</h6>
+                      <div class="dropdown mb-2">
+                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a>
+                          <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a>
+                          <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a>
+                          <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a>
+                          <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 col-md-12 col-xl-5">
+                        <h3 class="mb-2">35,084</h3>
+                        <div class="d-flex align-items-baseline">
+                          <p class="text-danger">
+                            <span>-2.8%</span>
+                            <i data-feather="arrow-down" class="icon-sm mb-1"></i>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12 col-xl-7">
+                        <div id="ordersChart" class="mt-md-3 mt-xl-0"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-baseline">
+                      <h6 class="card-title mb-0">Growth</h6>
+                      <div class="dropdown mb-2">
+                        <button class="btn p-0" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                          <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a>
+                          <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a>
+                          <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a>
+                          <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a>
+                          <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 col-md-12 col-xl-5">
+                        <h3 class="mb-2">89.87%</h3>
+                        <div class="d-flex align-items-baseline">
+                          <p class="text-success">
+                            <span>+2.8%</span>
+                            <i data-feather="arrow-up" class="icon-sm mb-1"></i>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12 col-xl-7">
+                        <div id="growthChart" class="mt-md-3 mt-xl-0"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="row">
+          <div class="col-12 col-xl-12 grid-margin stretch-card">
+            <div class="card overflow-hidden">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-baseline mb-4 mb-md-3">
+                  <h6 class="card-title mb-0">Revenue</h6>
+                  <div class="dropdown">
+                    <button class="btn p-0" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-start">
+                  <div class="col-md-7">
+                    <p class="text-muted tx-13 mb-3 mb-md-0">Revenue is the income that a business has from its normal business activities, usually from the sale of goods and services to customers.</p>
+                  </div>
+                  <div class="col-md-5 d-flex justify-content-md-end">
+                    <div class="btn-group mb-3 mb-md-0" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-primary">Today</button>
+                      <button type="button" class="btn btn-outline-primary d-none d-md-block">Week</button>
+                      <button type="button" class="btn btn-primary">Month</button>
+                      <button type="button" class="btn btn-outline-primary">Year</button>
+                    </div>
+                  </div>
+                </div>
+                <div id="revenueChart" ></div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="row">
+          <div class="col-lg-7 col-xl-8 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-baseline mb-2">
+                  <h6 class="card-title mb-0">Monthly sales</h6>
+                  <div class="dropdown mb-2">
+                    <button class="btn p-0" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-muted">Sales are activities related to selling or the number of goods or services sold in a given time period.</p>
+                <div id="monthlySalesChart"></div>
+              </div> 
+            </div>
+          </div>
+          <div class="col-lg-5 col-xl-4 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-baseline">
+                  <h6 class="card-title mb-0">Cloud storage</h6>
+                  <div class="dropdown mb-2">
+                    <button class="btn p-0" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div id="storageChart"></div>
+                <div class="row mb-3">
+                  <div class="col-6 d-flex justify-content-end">
+                    <div>
+                      <label class="d-flex align-items-center justify-content-end tx-10 text-uppercase fw-bolder">Total storage <span class="p-1 ms-1 rounded-circle bg-secondary"></span></label>
+                      <h5 class="fw-bolder mb-0 text-end">8TB</h5>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div>
+                      <label class="d-flex align-items-center tx-10 text-uppercase fw-bolder"><span class="p-1 me-1 rounded-circle bg-primary"></span> Used storage</label>
+                      <h5 class="fw-bolder mb-0">~5TB</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-grid">
+                  <button class="btn btn-primary">Upgrade storage</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="row">
+          <div class="col-lg-5 col-xl-4 grid-margin grid-margin-xl-0 stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-baseline mb-2">
+                  <h6 class="card-title mb-0">Inbox</h6>
+                  <div class="dropdown mb-2">
+                    <button class="btn p-0" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column">
+                  <a href="javascript:;" class="d-flex align-items-center border-bottom pb-3">
+                    <div class="me-3">
+                      <img src="https://via.placeholder.com/35x35" class="rounded-circle wd-35" alt="user">
+                    </div>
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between">
+                        <h6 class="text-body mb-2">Leonardo Payne</h6>
+                        <p class="text-muted tx-12">12.30 PM</p>
+                      </div>
+                      <p class="text-muted tx-13">Hey! there I'm available...</p>
+                    </div>
+                  </a>
+                  <a href="javascript:;" class="d-flex align-items-center border-bottom py-3">
+                    <div class="me-3">
+                      <img src="https://via.placeholder.com/35x35" class="rounded-circle wd-35" alt="user">
+                    </div>
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between">
+                        <h6 class="text-body mb-2">Carl Henson</h6>
+                        <p class="text-muted tx-12">02.14 AM</p>
+                      </div>
+                      <p class="text-muted tx-13">I've finished it! See you so..</p>
+                    </div>
+                  </a>
+                  <a href="javascript:;" class="d-flex align-items-center border-bottom py-3">
+                    <div class="me-3">
+                      <img src="https://via.placeholder.com/35x35" class="rounded-circle wd-35" alt="user">
+                    </div>
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between">
+                        <h6 class="text-body mb-2">Jensen Combs</h6>
+                        <p class="text-muted tx-12">08.22 PM</p>
+                      </div>
+                      <p class="text-muted tx-13">This template is awesome!</p>
+                    </div>
+                  </a>
+                  <a href="javascript:;" class="d-flex align-items-center border-bottom py-3">
+                    <div class="me-3">
+                      <img src="https://via.placeholder.com/35x35" class="rounded-circle wd-35" alt="user">
+                    </div>
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between">
+                        <h6 class="text-body mb-2">Amiah Burton</h6>
+                        <p class="text-muted tx-12">05.49 AM</p>
+                      </div>
+                      <p class="text-muted tx-13">Nice to meet you</p>
+                    </div>
+                  </a>
+                  <a href="javascript:;" class="d-flex align-items-center border-bottom py-3">
+                    <div class="me-3">
+                      <img src="https://via.placeholder.com/35x35" class="rounded-circle wd-35" alt="user">
+                    </div>
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between">
+                        <h6 class="text-body mb-2">Yaretzi Mayo</h6>
+                        <p class="text-muted tx-12">01.19 AM</p>
+                      </div>
+                      <p class="text-muted tx-13">Hey! there I'm available...</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 col-xl-8 stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-baseline mb-2">
+                  <h6 class="card-title mb-0">Projects</h6>
+                  <div class="dropdown mb-2">
+                    <button class="btn p-0" type="button" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton7">
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer" class="icon-sm me-2"></i> <span class="">Print</span></a>
+                      <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download" class="icon-sm me-2"></i> <span class="">Download</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-hover mb-0">
+                    <thead>
+                      <tr>
+                        <th class="pt-0">#</th>
+                        <th class="pt-0">Project Name</th>
+                        <th class="pt-0">Start Date</th>
+                        <th class="pt-0">Due Date</th>
+                        <th class="pt-0">Status</th>
+                        <th class="pt-0">Assign</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>NobleUI jQuery</td>
+                        <td>01/01/2022</td>
+                        <td>26/04/2022</td>
+                        <td><span class="badge bg-danger">Released</span></td>
+                        <td>Leonardo Payne</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>NobleUI Angular</td>
+                        <td>01/01/2022</td>
+                        <td>26/04/2022</td>
+                        <td><span class="badge bg-success">Review</span></td>
+                        <td>Carl Henson</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>NobleUI ReactJs</td>
+                        <td>01/05/2022</td>
+                        <td>10/09/2022</td>
+                        <td><span class="badge bg-info">Pending</span></td>
+                        <td>Jensen Combs</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>NobleUI VueJs</td>
+                        <td>01/01/2022</td>
+                        <td>31/11/2022</td>
+                        <td><span class="badge bg-warning">Work in Progress</span>
+                        </td>
+                        <td>Amiah Burton</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>NobleUI Laravel</td>
+                        <td>01/01/2022</td>
+                        <td>31/12/2022</td>
+                        <td><span class="badge bg-danger">Coming soon</span></td>
+                        <td>Yaretzi Mayo</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>NobleUI NodeJs</td>
+                        <td>01/01/2022</td>
+                        <td>31/12/2022</td>
+                        <td><span class="badge bg-primary">Coming soon</span></td>
+                        <td>Carl Henson</td>
+                      </tr>
+                      <tr>
+                        <td class="border-bottom">3</td>
+                        <td class="border-bottom">NobleUI EmberJs</td>
+                        <td class="border-bottom">01/05/2022</td>
+                        <td class="border-bottom">10/11/2022</td>
+                        <td class="border-bottom"><span class="badge bg-info">Pending</span></td>
+                        <td class="border-bottom">Jensen Combs</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div> -->
+			<!-- </div> -->
+
+			<!-- partial:partials/_footer.html -->
+			<!-- <footer class="footer border-top">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between py-3 small">
+          <p class="text-muted mb-1 mb-md-0">Copyright © 2022 <a href="https://www.nobleui.com" target="_blank">NobleUI</a>.</p>
+          <p class="text-muted">Handcrafted With <i class="mb-1 text-primary ms-1 icon-sm" data-feather="heart"></i></p>
+        </div>
+			</footer> -->
+			<!-- partial -->
+		
+		</div>
+	</div>
+
+	<!-- core:js -->
+	<script src="../assets/vendors/core/core.js"></script>
+	<!-- endinject -->
+
+	<!-- Plugin js for this page -->
+  <script src="../assets/vendors/chartjs/Chart.min.js"></script>
+  <script src="../assets/vendors/jquery.flot/jquery.flot.js"></script>
+  <script src="../assets/vendors/jquery.flot/jquery.flot.resize.js"></script>
+  <script src="../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../assets/vendors/apexcharts/apexcharts.min.js"></script>
+	<!-- End plugin js for this page -->
+
+	<!-- inject:js -->
+	<script src="../assets/vendors/feather-icons/feather.min.js"></script>
+	<script src="../assets/js/template.js"></script>
+	<!-- endinject -->
+
+	<!-- Custom js for this page -->
+  <script src="../assets/js/dashboard-light.js"></script>
+  <script src="../assets/js/datepicker.js"></script>
+	<!-- End custom js for this page -->
+
+</body>
+</html>    
