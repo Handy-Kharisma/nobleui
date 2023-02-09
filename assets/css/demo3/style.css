@@ -623,33 +623,39 @@ progress {
   margin-left: auto;
 }
 
+/* EDIT */
 @media (min-width: 576px) {
   .container-sm, .container, .page-wrapper .page-content {
-    max-width: 540px;
+	/* max-width: 540px; */
+    max-width: 95%;
   }
 }
+/* EDIT */
 @media (min-width: 768px) {
   .container-md, .container-sm, .container, .page-wrapper .page-content {
-    max-width: 720px;
+	/* max-width: 720px; */
+  	max-width: 95%;
   }
 }
 /* EDIT */
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container, .page-wrapper .page-content {
     /* max-width: 960px; */
-    max-width: 90%;
+    max-width: 95%;
   }
 }
 /* EDIT */
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container, .page-wrapper .page-content {
     /* max-width: 1140px; */
-    max-width: 90%;
+    max-width: 95%;
   }
 }
+/* EDIT */
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container, .page-wrapper .page-content {
-    max-width: 1320px;
+	/* max-width: 1320px; */
+  	max-width: 95%;
   }
 }
 /* EDIT */
@@ -22766,14 +22772,18 @@ body {
   padding: 0.1rem 0 0.1rem 0;
   margin-bottom: 0;
 }
+/* EDIT */
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link {
   color: #000;
-  padding: 22px 10px;
+  /* padding: 22px 10px; */
+  padding: 16px 5px;
   line-height: 1;
   font-weight: 400;
 }
+
+/* EDIT */
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link .menu-title {
-  font-size: 14px;
+  font-size: 12px;
 }
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link .link-icon {
   margin-right: 10px;
@@ -22873,10 +22883,11 @@ body {
     width: 5px;
   }
 }
-.horizontal-menu .bottom-navbar .page-navigation > .nav-item.active > .nav-link .menu-title,
-.horizontal-menu .bottom-navbar .page-navigation > .nav-item.active > .nav-link .link-icon,
-.horizontal-menu .bottom-navbar .page-navigation > .nav-item.active > .nav-link .link-arrow {
+.horizontal-menu .bottom-navbar .page-navigation > .nav-item.active > .nav-link:hover .menu-title:hover,
+.horizontal-menu .bottom-navbar .page-navigation > .nav-item.active > .nav-link:hover .link-icon:hover,
+.horizontal-menu .bottom-navbar .page-navigation > .nav-item.active > .nav-link:hover .link-arrow:hover {
   color: #6571ff;
+  /* color: #000000; */
 }
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item .submenu {
   display: none;
@@ -22916,7 +22927,8 @@ body {
   background: #6571ff;
 }
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item .submenu ul li a.active {
-  color: #6571ff;
+  /* color: #6571ff; */
+  /* color: #000000; */
 }
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item .submenu ul li.active a {
   color: #6571ff;
@@ -22924,8 +22936,10 @@ body {
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item .submenu ul li.active a:before {
   background: #6571ff;
 }
+/* EDIT */
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item:not(.mega-menu) {
   position: relative;
+  margin-right: 5px;
 }
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item:not(.mega-menu) .submenu {
   left: 0;
@@ -22936,9 +22950,11 @@ body {
   min-width: 180px;
 }
 @media (min-width: 768px) {
+  /* EDIT */
   .horizontal-menu .bottom-navbar .page-navigation > .nav-item:not(.mega-menu) .submenu {
     position: absolute;
-    top: 61px;
+	/* top: 61px; */
+  	top: 50px;
     z-index: 999;
     background: #fff;
     border-top: none;
@@ -22993,9 +23009,11 @@ body {
   padding: 15px 25px;
 }
 @media (min-width: 768px) {
+  /* EDIT */
   .horizontal-menu .bottom-navbar .page-navigation > .nav-item.mega-menu .submenu {
     position: absolute;
-    top: 61px;
+    /* top: 61px; */
+  	top: 50px;
     z-index: 999;
     background: #fff;
     border-top: none;
